@@ -1,0 +1,25 @@
+doctype html 
+html 
+    head
+        title Anshit Fitness
+        block scripts
+        block style
+            style
+                include ../static/css/style.css
+
+body
+    header.header 
+        div.logo
+            img(src="../static/img/logo.jpg")
+            div Anshit Fitness
+
+        div.navigation-menus
+            ul.navbar
+                li #[a(href="/" class="active") Home]
+                li #[a(href="about") About Us]
+                li #[a(href="fitnessCalculator") fitnessCalculator]
+                li #[a(href="contact") Contact us]
+
+    
+
+

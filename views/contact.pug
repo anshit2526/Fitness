@@ -1,0 +1,42 @@
+doctype html 
+html 
+    head
+        title Anshit Fitness
+        block scripts 
+        block style
+            style 
+                include ../static/css/style.css
+
+body
+    header.header 
+        div.logo
+            img(src="../static/img/logo.jpg")
+            div Anshit Fitness
+
+        div.navigation-menus
+            ul.navbar
+                li #[a(href="/") Home]
+                li #[a(href="about") About Us]
+                li #[a(href="fitnessCalculator") fitnessCalculator]
+                li #[a(href="contact" class="active") Contact us]
+
+
+    div.user-form-container
+        h1 Join the best gym now
+        form(action="/contact", method="post")
+            div.form-group
+                input(type="text" name="name" placeholder="Enter your name")
+            div.form-group
+                input(type="text" name="age" placeholder="Enter your age")
+            div.form-group
+                input(type="text" name="gender" placeholder="Enter your gender")
+            div.form-group
+                input(type="text" name="locality" placeholder="Enter your locality")
+            div.form-group
+                input(type="text" name="phone" placeholder="Enter your phone number")
+            div.form-group
+                input(type="text" name="email" placeholder="Enter your email")
+            button(class="btn" type="submit") Submit
+            button(class="btn" type="reset") Reset
+                
+
